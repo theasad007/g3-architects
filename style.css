@@ -1,9 +1,351 @@
 /* Basic Styles */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Work Sans', sans-serif;
 }
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+p {
+	font-size: 16px;
+	color: #727272;
+	line-height: 26px;
+}
+/* Header Area Styles */
+.header-area {
+	background: #FFF4E7;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+.brand-name {
+	font-size: 45px; 
+	font-weight: 700;
+}
+.nav-menu {
+	list-style: none;
+	display: flex;
+	gap: 55px;
+}
+.nav-menu li a {
+	text-decoration: none;
+	color: #424242;
+	font-size: 18px;
+}
+
+/* Banner Area Styles */
+.banner {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.banner-info {
+	text-align: center;
+}
+.banner-title {
+	font-size: 64px;
+	color: #131313;
+	margin-bottom: 25px;
+}
+.banner-description {
+	margin-bottom: 30px;
+}
+.btn-regular {
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+	padding: 20px 25px;
+	border: none;
+	border-radius: 8px;
+	background: #FF900E;
+}
+.baner-image {
+    margin-top: 100px;
+}
+
+/* Team Area Styles */
+.team-area {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.team-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+    padding: 0 60px;
+}
+.team-images {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 25px;
+}
+.team-details {
+	padding-left: 75px;
+}
+.team-title {
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+.colored-text-1 {
+	color: #727272;
+	font-weight: 500;
+}
+.colored-text-2 {
+	color: #FF900E;
+}
+.team-description {
+	margin-bottom: 35px;
+}
+
+/* Features Area Style */
+.features-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.features {
+	padding-right: 150px;
+}
+.feature-title {
+	font-size: 45px;
+	color: #131313;
+	margin-bottom: 25px;
+	padding-left: 20px;
+	border-left: 5px solid #FF900E;
+}
+.feature-description {
+	margin-bottom: 30px;
+}
+.feature-box-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.feature-box {
+	padding: 30px;
+	box-shadow: 0px 4px 30px 0 rgba(0,0,0,0.06);
+	border-radius: 8px;
+}
+.feature-box-title {
+	font-size: 20px;
+	color: #131313;
+	margin-bottom: 10px;
+}
+.experience-box {
+	display: inline-block;
+	padding: 50px 45px;
+	background: #FF900E;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: -150px;
+	margin-left: -100px;
+}
+.experience-box-title {
+	font-size: 65px;
+	line-height: 70px;
+    color: #ffffff;
+}
+.experience-box-description {
+	font-size: 25px;
+	color: #ffffff;
+}
+
+/* Facts Area Styles */
+.facts-area {
+	padding-top: 100px;
+}
+.facts-info {
+	padding-bottom: 100px;
+}
+.facts-title {
+	font-size: 45px;
+	color: #131313;
+	margin-bottom: 25px;
+}
+.fact {
+	width: 240px;
+	height: 240px;
+	border: 1px solid #FF900E
+    ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border-radius: 8px;
+    transition: 0.3s all;
+}
+.fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px 0 rgba(0,0,0,0.09);
+}
+.facts-details {
+	display: flex;
+	justify-content: space-around;
+}
+.fact-inner img {
+	margin-bottom: 5px;
+}
+.fact-number {
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.fact-subtitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* Sponsor Area Styles */
+.sponsor-area {
+    padding: 100px 0;
+}
+.sponsor-info {
+	text-align: center;
+}
+.sponsor-title {
+	font-size: 45px;
+	margin-bottom: 24px;
+}
+.sponsor-description {
+	margin-bottom: 50px;
+}
+.sponsor-logos {
+    display: flex;
+    justify-content: space-between;
+}
+.sponsor img {
+    filter: grayscale(100%);
+}
+
+/* Promo Area Styles */
+.promo-area {
+    padding-bottom: 100px;
+}
+.promo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.06);
+    border-radius: 8px;
+}
+.promo-title {
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+/* Footer Area Styles */
+.footer-area {
+    padding-bottom: 100px;
+}
+.footer-description {
+    background: #FFF4E7;
+    text-align: center;
+    padding: 40px 0;
+    color: #424242;
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+/* Styles for Responsive Mobile Screens */
+
+@media (max-width: 575.98px) { 
+    /* Basic Styles */
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .banner-title,
+    .experience-box-title {
+        font-size: 52px;
+    }
+    .team-title,
+    .feature-title,
+    .facts-title,
+    .promo-title,
+    .sponsor-title {
+        font-size: 36px;
+    }
+    /* Header Area Styles */
+    .nav {
+        flex-direction: column;
+    }
+    .brand-name {
+        margin-bottom: 25px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Team Area Styles */
+    .team-wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 0px;
+    }
+    .team-images {
+        grid-template-columns: none;
+        grid-row-gap: 25px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .team-details {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* Features Area Styles */
+    .features-wrapper {
+        grid-template-columns: none;
+    }
+    .features {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .feature-image {
+        text-align: center;
+    }
+    .experience-box {
+        margin-top: -100px;
+        margin-left: 0;
+    }
+
+    /* Facts Area Styles */
+    .facts-info {
+        text-align: center;
+    }
+    .facts-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px
+    }
+
+    /* Sponsor Area Styles */
+    .sponsor-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px
+    }
+
+    /* Promotion Area Styles */
+    .promo-wrapper {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .promo-info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
